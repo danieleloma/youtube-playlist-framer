@@ -1170,11 +1170,4 @@ addPropertyControls(YouTubePlaylistFeed, {
     description: 'Display published date',
     defaultValue: true,
   },
-  apiUrl: {
-    type: ControlType.String,
-    title: 'API URL',
-    description: 'Custom API endpoint (optional - defaults to deployed Vercel API)',
-    defaultValue: 'https://youtube-playlist-framer.vercel.app/api/ytPlaylist',
-    placeholder: 'https://youtube-playlist-framer.vercel.app/api/ytPlaylist',
-  },
 })
