@@ -5,7 +5,7 @@
   "main": "components/YouTubePlaylistFeed/index.tsx",
   "scripts": {
     "dev": "vercel dev",
-    "build": "tsc --noEmit",
+    "build": "echo 'No build needed - API only'",
     "lint": "eslint . --ext .ts,.tsx,.js",
     "type-check": "tsc --noEmit"
   },

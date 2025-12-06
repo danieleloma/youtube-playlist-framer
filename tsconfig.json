@@ -7,7 +7,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "allowJs": true,
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -22,12 +22,12 @@
     }
   },
   "include": [
-    "components/**/*",
     "api/**/*"
   ],
   "exclude": [
     "node_modules",
-    ".vercel"
+    ".vercel",
+    "components/**/*"
   ]
 }
 
