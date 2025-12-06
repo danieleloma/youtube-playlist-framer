@@ -1,4 +1,17 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/ytPlaylist.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/ytPlaylist",
+      "dest": "/api/ytPlaylist.js"
+    }
+  ],
   "functions": {
     "api/ytPlaylist.js": {
       "maxDuration": 10
