@@ -716,7 +716,9 @@ export function YouTubePlaylistFeed({
   const [currentVideoIndex, setCurrentVideoIndex] = React.useState(0)
   const [selectedVideo, setSelectedVideo] = React.useState<YouTubeVideo | null>(null)
 
-  const apiEndpoint = apiUrl || '/api/ytPlaylist'
+  // Default API endpoint - automatically uses deployed Vercel API
+  // Users can override this by setting apiUrl prop if needed
+  const apiEndpoint = apiUrl || 'https://youtube-playlist-framer.vercel.app/api/ytPlaylist'
 
   const fetchPlaylist = React.useCallback(async () => {
     const extractedId = extractPlaylistId(playlistIdOrUrl)
@@ -1171,8 +1173,8 @@ addPropertyControls(YouTubePlaylistFeed, {
   apiUrl: {
     type: ControlType.String,
     title: 'API URL',
-    description: 'Custom API endpoint (optional)',
-    defaultValue: '',
-    placeholder: '/api/ytPlaylist',
+    description: 'Custom API endpoint (optional - defaults to deployed Vercel API)',
+    defaultValue: 'https://youtube-playlist-framer.vercel.app/api/ytPlaylist',
+    placeholder: 'https://youtube-playlist-framer.vercel.app/api/ytPlaylist',
   },
 })
