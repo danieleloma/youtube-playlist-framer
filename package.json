@@ -1,0 +1,35 @@
+{
+  "name": "youtube-playlist-feed-framer",
+  "version": "1.0.0",
+  "description": "YouTube Playlist Feed Component for Framer - RSS-based, no API keys required",
+  "main": "components/YouTubePlaylistFeed/index.tsx",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx,.js",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "framer",
+    "youtube",
+    "playlist",
+    "rss",
+    "component",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "framer": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
